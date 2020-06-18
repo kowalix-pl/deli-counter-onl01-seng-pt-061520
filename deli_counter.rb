@@ -14,12 +14,15 @@ end
 
 
 def take_a_number(katz_deli,name)
+
 case katz_deli.size
   when katz_deli.size == 0
-  puts "Welcome, #{name}. You are number 1 in line."
-else 
-  size = katz_deli.size
-  puts "Welcome, #{name}. You are number #{size + 1} in line."
-end 
+    puts "Welcome, #{name}. You are number 1 in line."
+    katz_deli<< name 
+  else 
+     katz_deli<< name 
+     size = katz_deli.size
+     puts "Welcome, #{name}. You are number #{size} in line."
+  end
 end
 

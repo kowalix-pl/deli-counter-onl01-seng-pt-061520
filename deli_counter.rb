@@ -2,12 +2,14 @@ require 'pry'
 def line(katz_deli)
 binding.pry
 unless katz_deli == []
- katz_deli.each_with_index {|person, index|
-puts "The line is currently: #{index.to_i + 1}. #{person}."}
+ katz_deli.each_with_index do |person, index| 
+   puts "The line is currently: #{index.to_i + 1}. #{person}."
+  end
 else 
-puts "The line is currently empty."
+  puts "The line is currently empty."
 end
 end
+
 
 def take_a_number(katz_deli,name)
 case katz_deli.size

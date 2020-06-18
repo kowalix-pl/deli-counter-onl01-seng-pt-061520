@@ -13,7 +13,7 @@ def line(katz_deli)
 end
 
 
-def take_a_number(katz_deli,name)
+# def take_a_number(katz_deli,name)
 
 # case katz_deli.size
 #   when katz_deli.size == 0
@@ -26,3 +26,7 @@ def take_a_number(katz_deli,name)
 #   end
 # end
 
+def take_a_number(katz_deli,name)
+ katz_deli << name
+    puts "Welcome, #{name}. You are number #{katz_deli.size} in line."
+end

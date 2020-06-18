@@ -1,6 +1,6 @@
 require 'pry'
 def line(katz_deli)
-
+binding.pry
 unless katz_deli == []
  katz_deli.each_with_index {|person, index|
 puts "The line is currently: #{index.to_i + 1}. #{person}."}

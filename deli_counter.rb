@@ -2,7 +2,7 @@ require 'pry'
 def line(katz_deli)
 # binding.pry
    message = "The line is currently:"
-  if katz_deli != []
+  unless katz_deli == []
     katz_deli.each_with_index do |person, index| 
       message << " #{index.to_i + 1}. #{person}"
    end

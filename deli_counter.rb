@@ -1,10 +1,12 @@
 require 'pry'
 def line(katz_deli)
 # binding.pry
+   message = "The line is currently:"
   if katz_deli != []
     katz_deli.each_with_index do |person, index| 
-       puts "The line is currently: #{index.to_i + 1}. #{person}."
+      message << "#{index.to_i + 1}. #{person}."
    end
+    puts message 
   else 
     puts "The line is currently empty."
   end
